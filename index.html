@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Naivas Job Application Form</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    background:#f4f6f8;
+    padding:20px;
+}
+
+.container{
+    max-width:900px;
+    margin:auto;
+    background:white;
+    padding:25px;
+    border-radius:10px;
+}
+
+.header{
+    text-align:center;
+}
+
+.logo{
+    width:140px;
+}
+
+h1{
+    color:#008000;
+}
+
+.section{
+    margin-top:25px;
+}
+
+.section h2{
+    background:#008000;
+    color:white;
+    padding:10px;
+    border-radius:5px;
+}
+
+label{
+    display:block;
+    margin-top:10px;
+    font-weight:bold;
+}
+
+input, select, textarea{
+    width:100%;
+    padding:10px;
+    margin-top:5px;
+}
+
+.radio-group label{
+    font-weight:normal;
+    display:block;
+    margin:5px 0;
+}
+
+.payment{
+    background:#e8f5e9;
+    padding:15px;
+    border-left:5px solid green;
+}
+
+.terms{
+    background:#fff8e1;
+    padding:15px;
+    border-left:5px solid orange;
+}
+
+button{
+    width:100%;
+    padding:15px;
+    margin-top:20px;
+    background:#008000;
+    color:white;
+    font-size:18px;
+    border:none;
+    cursor:pointer;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- HEADER -->
+<div class="header">
+    <img src="naivas logo.jpg" class="logo" alt="Logo">
+    <h1>NAIVAS JOB APPLICATION FORM</h1>
+    <p>Fill in all details correctly before submission</p>
+</div>
+
+<form name="job-application" method="POST" data-netlify="true">
+
+<input type="hidden" name="form-name" value="job-application">
+
+<!-- PERSONAL INFO -->
+<div class="section">
+<h2>Personal Information</h2>
+
+<label>First Name</label>
+<input type="text" name="first_name" required>
+
+<label>Last Name</label>
+<input type="text" name="last_name" required>
+
+<label>National ID Number</label>
+<input type="text" name="id_number" required>
+
+<label>Email</label>
+<input type="email" name="email" required>
+
+<label>Phone Number</label>
+<input type="tel" name="phone" required>
+
+<label>Location</label>
+<input type="text" name="location" required>
+</div>
+
+<!-- VACANCIES -->
+<div class="section">
+<h2>Vacancies</h2>
+
+<div class="radio-group">
+<label><input type="radio" name="position" value="Delivery Guy" required> Delivery Guy</label>
+<label><input type="radio" name="position" value="Cashier"> Cashier</label>
+<label><input type="radio" name="position" value="Packing Helper"> Packing Helper</label>
+<label><input type="radio" name="position" value="Driver"> Driver</label>
+<label><input type="radio" name="position" value="Security Guard"> Security Guard</label>
+<label><input type="radio" name="position" value="Cleaner"> Cleaner</label>
+<label><input type="radio" name="position" value="Butcherman"> Butcherman</label>
+<label><input type="radio" name="position" value="Store Keeper"> Store Keeper</label>
+<label><input type="radio" name="position" value="Caretaker"> Caretaker</label>
+<label><input type="radio" name="position" value="Receptionist"> Receptionist</label>
+<label><input type="radio" name="position" value="Chef"> Chef</label>
+</div>
+</div>
+
+<!-- EDUCATION -->
+<div class="section">
+<h2>Education</h2>
+
+<label>Highest Level</label>
+<select name="education" required>
+<option value="">Select</option>
+<option>Primary</option>
+<option>Secondary</option>
+<option>Certificate</option>
+<option>Diploma</option>
+<option>Degree</option>
+</select>
+
+<label>Institution Name</label>
+<input type="text" name="institution">
+</div>
+
+<!-- EXPERIENCE -->
+<div class="section">
+<h2>Experience</h2>
+
+<label>Do you have experience?</label>
+<select name="experience_status">
+<option>Yes</option>
+<option>No</option>
+</select>
+
+
+
+<!-- PAYMENT -->
+<div class="section">
+<h2>Membership Payment</h2>
+
+<div class="payment">
+<p><b>Fee: KES 100</b></p>
+<p>Pay via M-PESA:</p>
+<p>Go to Lipa na M-PESA → Pochi la Biashara</p>
+<p><b>Phone number: 0141236979</b></p>
+<p>After payment, enter transaction code below</p>
+</div>
+
+<label>M-PESA Transaction Code</label>
+<input type="text" name="transaction_code" required>
+</div>
+<label>for any help, contact us at:<br> 
+     <text>0141236979</text> 
+    </label>
+
+<!-- TERMS -->
+<div class="section">
+<h2>Terms & Conditions</h2>
+
+<div class="terms">
+<ul>
+<li>Membership fee is mandatory (KES 100)</li>
+<li>Training programs may be required</li>
+<li>False information leads to disqualification</li>
+<li>Only shortlisted candidates will be contacted</li>
+</ul>
+</div>
+</div>
+
+<!-- DECLARATION -->
+<div class="section">
+<h2>Declaration</h2>
+
+<label>
+<input type="checkbox" required>
+I confirm that all information provided is correct
+</label>
+
+<label>
+<input type="checkbox" required>
+I confirm that I have paid the membership fee
+</label>
+</div>
+
+<button type="submit">APPLY NOW</button>
+
+</form>
+
+</div>
+
+</body>
+</html>
