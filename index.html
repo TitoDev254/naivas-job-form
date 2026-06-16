@@ -96,9 +96,11 @@ button{
     <h1>NAIVAS JOB APPLICATION FORM</h1>
     <p>Fill in all details correctly before submission</p>
 </div>
-<form name="job-application" method="POST" data-netlify="true" netlify>
-    <input type="hidden" name="form-name" value="job-application">
-    <input type="hidden" name="subject" value="New Job Application">
+<form name="job-application"
+      method="POST"
+      data-netlify="true"
+      action="https://script.google.com/macros/s/AKfycbzwGJp73Yna_3GaEtB9E1M0s7L9uvwKau1UXDgv4cTSsIQ57NEE_39-zzEZSBtbvgKwdQ/exec">
+      <input type="hidden" name="form-name" value="job-application">
    
 
 <!-- PERSONAL INFO -->
@@ -111,8 +113,7 @@ button{
 <label>Last Name</label>
 <input type="text" name="last_name" required>
 
-<label>National ID Number</label>
-<input type="text" name="id_number" required>
+
 
 <label>Email</label>
 <input type="email" name="email" required>
